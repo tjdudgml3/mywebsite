@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="myhompage.js"></script>
+    <title>Document</title>
+    <style>
+        up{
+          background-color: gray;
+          color: black;
+        }
+        f{
+          border: solid 3px black;
+          
+        }
+        video{
+          width: 70%;
+          height: 95%;
+        }
+        .b{
+          border: solid 1px skyblue;
+        }
+        .m{
+          padding: 10px;
+          
+        }
+        #main_introduce{
+            font-size: large;
+        }
+        .main{
+            margin: 15%;
+            width: 100%;
+            
+        }
+        .second{
+            margin: 0% 0% 0% 0%;
+            width: 100%;
+        }
+        h1{
+            text-align: center
+        }
+    </style>
+</head>
+
+<body class = "container">
+    <nav class = "navbar navbar-expand-lg bg-light">
+        <div class ="container-fluid">
+            <a class= "navbar-brand" href="#">tjdudgml3/서영희</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav  justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">정보</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      프로젝트
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">이미지피커</a></li>
+                      <li><a class="dropdown-item" href="#">신용카드불법거래</a></li>
+                      <li><a class="dropdown-item" href="#">country_zombie_war</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                
+              </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <div class="container b">
+      <br>
+      <br>
+        <div class="row">
+          <div class="col-3">
+            <h4>dkssid</h4>
+          </div>
+          <div class="col-5">
+                <h4>안녕하세요. 인공지능 개발자, 데이터 분석가를 꿈꾸는 서영희입니다.</h4>
+                <a href="http://www.github.com/tjdudgml3">github link 바로가기</a> 
+          </div>
+          <div class="col-4 ">
+                <p id = "main_introduce">
+                    홍익대학교 컴퓨터 공학과 졸업<p></p>
+                    MS AI school <p></p>
+
+                    WonderfulPlatform chatbot team intern 2020.6~2020.8 <p></p>
+                    <div class="dropdown">
+                      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Certificates
+                      </a>
+                    
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Opic IH</a></li>
+                        <li><a class="dropdown-item" href="#">Microsoft AI900</a></li>
+                        <li><a class="dropdown-item" href="#">Microsoft DP900</a></li>
+                      </ul>
+                    </div>
+                </p>    
+            </div>
+                   
+        </div>
+        <br>
+        <br>
+    </div>
+    <br><br><br>
+    <div class="row">
+        <div class="col-sm-4">
+          <div class="card b">
+            <div class="card-body">
+              <h5 class="card-title">ImagePicker</h5>
+              <p class="card-text">앨범안의 이미지를 분류해주는 어플 개발.</p>
+              <a href="#" class="btn btn-primary" id="contents_ImagePicker">See Contents</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card b">
+            <div class="card-body">
+              <h5 class="card-title">토이 프로젝트들</h5>
+              <p class="card-text">토이 프로젝트로 인공지능, 머신러닝 프로젝트들</p>
+              <a href="#" class="btn btn-primary" id="contents_toy">See Contents</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card b">
+              <div class="card-body">
+                <h5 class="card-title">MS AI SCHOOL</h5>
+                <p class="card-text">MS AI SCHOOL 에서 배운내용. AZURE, DL, ML</p>
+                <a href="#" class="btn btn-primary" id="contents_MS_AI_school">See Contents</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    
+      <br><br><br><br>
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-sm-3">
+              <h2>Stacks</h2> <p></p>
+              <ul>
+                <li>Python</li>
+                <li>Machine learning&Deep learning</li>
+                <li>Data Handling</li>
+                <li>Azure cloud computing</li>
+                <li>Database engineering</li>
+              </ul>
+              
+            </div>
+            <div class="col">
+                <h4>방명록을 남겨주세요!</h4> <p></p>
+                
+                <label for="basic-url">방명록 남기기</label>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3">ID</span>
+                  </div>
+                  <input type="text" class="form-control" >
+                </div>
+                
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Email</span>
+                  </div>
+                  <input type="text" class="form-control" >
+                  
+                </div>
+                
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Comments</span>
+                  </div>
+                  <input type="text" class="form-control">
+                </div>
+                 
+            </div>           
+        </div>
+    </div>
+
+    <br>
+    <br><br><br>
+    <div class="container row b" id="imagePicker">
+      <h3>IMAGEPICKER</h3>
+      <div class="col-6">
+        <video controls>
+          <source src="./static/images/demo_video.mp4" type = "video/mp4">
+        </video>
+        <p>데모 비디오</p>
+
+      </div>
+      <div class="col-6 offset-0">
+        <p>여기는 설명 </p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container row b" id="toy_project">
+      <h2>Toy Projects</h2>
+      <div class = "container row b" id = "azure_Cognitive">
+        <div class = "row">
+          <video controls>
+            <source src = "./static/images/zombie_war_demo.mp4" type="video/mp4">
+          </video>
+          나오는 좀비를 죽이고 생존하는 게임
+        </div>
+        <div class = "row">
+          unity, C# 사용
+        </div>
+      </div>
+      
+    </div>
+    <br>
+    <br>
+    <footer class="container f row">
+      <div class="col-3"></div>
+      <button class="col-3 offset-6 up">위로가기</button>
+    </footer>
+    <script>
+      $(document).ready(function(){
+
+        $('#contents_ImagePicker').click(function(){
+    
+              $('html').animate({scrollTop : $('#imagePicker').offset().top}, 300);
+    
+        });
+    
+      });
+
+    </script>
+</body>
+</html>
